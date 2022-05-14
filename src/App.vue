@@ -34,6 +34,7 @@
     </v-app-bar>
 
     <v-main>
+      <the-menu />
       <HelloWorld />
     </v-main>
   </v-app>
@@ -41,12 +42,14 @@
 
 <script>
 import HelloWorld from "./components/HelloWorld";
+import TheMenu from "./components/TheMenu.vue";
 
 export default {
   name: "App",
 
   components: {
     HelloWorld,
+    TheMenu,
   },
 
   data: () => ({
