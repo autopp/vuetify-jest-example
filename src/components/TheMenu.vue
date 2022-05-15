@@ -1,7 +1,10 @@
 <template>
-  <v-menu>
+  <v-menu attach="#test">
     <template #activator="{ on, attrs }">
-      <v-btn color="primary" v-bind="attrs" v-on="on"> Dropdown </v-btn>
+      <v-btn data-testid="menu-btn" color="primary" v-bind="attrs" v-on="on">
+        Dropdown
+      </v-btn>
+      <span id="test"></span>
     </template>
     <v-list>
       <v-list-item v-for="(item, index) in items" :key="index">
